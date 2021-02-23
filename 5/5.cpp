@@ -1,7 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <string>
-#include <chrono>
 
 
 __int64 euler_5(const __int64& prev, const __int64& val)
