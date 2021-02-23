@@ -11,15 +11,11 @@ __int64 euler_5(const __int64& prev, const __int64& val)
 			if ((x % i) == 0)
 			{
 				if (i == 20)
-				{
 					return x;
-				}
 				++i;
 			}
 			else
-			{
 				break;
-			}
 		}
 	}
 
