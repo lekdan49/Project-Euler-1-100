@@ -37,15 +37,19 @@ void euler_4()
 
 	__int64 largest = 0;
 
-	for (__int64 i = 100; i < 1000; ++i)		// not efficient as we check numbers multiple times!
+	for (__int64 i = 999; i >= 100; --i)
 	{
-		for (__int64 y = 100 ; y < 1000; ++y)
+		for (__int64 y = 999 ; y >= 100; --y)	// this is not good code!
 		{
 			x = i * y;
+
+			if (x < largest)
+				continue;
+
 			std::string s = std::to_string(x);
 			if ((s.length() % 2) == 0)
 			{
-				if (check_palindrome(s) >= largest)
+				if (check_palindrome(s) > largest)
 					largest = x;
 			}
 		}
