@@ -37,7 +37,7 @@ void euler_4()
 
 	__int64 largest = 0;
 
-	for (__int64 i = 100; i < 1000; ++i)
+	for (__int64 i = 100; i < 1000; ++i)		// not efficient as we check numbers multiple times!
 	{
 		for (__int64 y = 100 ; y < 1000; ++y)
 		{
